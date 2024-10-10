@@ -34,55 +34,39 @@ You are an expert Git commit message generator, specializing in creating concise
 
 # OUTPUT EXAMPLES
 
-1. One per Commit:
+```bash
+git add [file1] [file2] ...
 
-    ```bash
-    git add [file1] [file2] ...
+git commit -m "<type>[optional scope in lowercase]: <description>
 
-    git commit -m "<type>[optional scope in lowercase]: <description>
+Examples : 
+git commit -m "feat(auth): implement two-factor authentication
+git commit -m "fix: correct input validation in user registration"
+git commit -m "docs: update readme with troubleshooting steps
+git commit -m "refactor: reorganize utility functions
 
-    [optional detailed body description]
+[optional detailed body description]
+Examples :
 
-    [optional footer(s)]
-    "
-    ```
+// For feature/fix example
+- add sms and email options for 2fa
+- update user model to support 2fa preferences
+- create new api endpoints for 2fa setup and verification"
 
-2. Basic commit:
+// For docs example
+- clarify debuggerPath replacement in launch.json
+- add steps to verify arm64 compatibility for cmake, clang, and clang++
+- provide example output for architecture verification commands
+- include command to upgrade llvm using homebrew on macos
+- add note to retry compilation after ensuring compatibility
 
-   ```bash
-   git commit -m "fix: correct input validation in user registration"
-   ```
+ // For refactor example
+- move helper functions from \`src/utils/helpers.js\` to \`src/utils/string-helpers.js\` and \`src/utils/array-helpers.js\`
+- update import statements in affected files
+- add unit tests for newly separated utility functions"
 
-3. Commit with body:
-
-   ```bash
-   git commit -m "feat(auth): implement two-factor authentication
-
-   - add sms and email options for 2fa
-   - update user model to support 2fa preferences
-   - create new api endpoints for 2fa setup and verification"
-   ```
-
-4. Commit with resolved issues:
-
-   ```bash
-   git commit -m "docs: update readme with troubleshooting steps
-
-   - clarify debuggerPath replacement in launch.json
-   - add steps to verify arm64 compatibility for cmake, clang, and clang++
-   - provide example output for architecture verification commands
-   - include command to upgrade llvm using homebrew on macos
-   - add note to retry compilation after ensuring compatibility
-
-   resolves #123, resolves #456"
-   ```
-
-5. Commit with filename in body:
-
-   ```bash
-   git commit -m "refactor: reorganize utility functions
-
-   - move helper functions from \`src/utils/helpers.js\` to \`src/utils/string-helpers.js\` and \`src/utils/array-helpers.js\`
-   - update import statements in affected files
-   - add unit tests for newly separated utility functions"
-   ```
+[optional footer(s)]
+Examples : 
+resolves #123, resolves #456
+"
+```
