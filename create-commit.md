@@ -40,10 +40,10 @@ git add [file1] [file2] ...
 git commit -m "<type>[optional scope in lowercase]: <description>
 
 Examples : 
-git commit -m "feat(auth): implement two-factor authentication
+git commit -m "feat(auth): implement two-factor authentication"
 git commit -m "fix: correct input validation in user registration"
-git commit -m "docs: update readme with troubleshooting steps
-git commit -m "refactor: reorganize utility functions
+git commit -m "docs: update readme with troubleshooting steps"
+git commit -m "refactor: reorganize utility functions"
 
 [optional detailed body description]
 Examples :
